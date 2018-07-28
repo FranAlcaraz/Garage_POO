@@ -4,7 +4,7 @@ public class GarageTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		test
+
 
 //		public void sumarVehiculo(){
 //			vehiculos = ingAuto + ingMoto;
