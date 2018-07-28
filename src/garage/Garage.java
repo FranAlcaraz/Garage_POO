@@ -15,30 +15,20 @@ public class Garage {
 	
 	
 	
-	
-	
 	public Garage(String nombreGarage, double precioCambio, int vMax) {
 		this.nombreGarage = nombreGarage;
 		this.precioCambio = precioCambio;
 		this.vMax = vMax;
 	}
-	public void setIngresoAuto(int ingAuto, Auto auto) {
-		this.ingAuto = ingAuto;
-		this.auto=auto;
-		ingAuto ++;
-	}
-	public int getIngresoAuto() {
-		return ingAuto;
-	}
-	public void setIngresoMoto(int ingMoto, Moto moto) {
-		this.ingAuto = ingMoto;
-		this.moto=moto;
-		ingMoto ++;
-	}
-	public int getIngresoMoto() {
-		return ingMoto;
+	
+	
+	public void setCambiarRuedas(int cRuedas){
+		this.cRuedas=cRuedas;
 	}
 	
+	public int getCambiarRuedas(){
+		return cRuedas;
+	}
 	
 	
 	public void sumarVehiculo(){
