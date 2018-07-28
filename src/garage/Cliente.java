@@ -10,6 +10,9 @@ public class Cliente {
 		tipoV = tipoVehiculo;
 	}
 	
+	
+	
+	
 	public String getnCliente() {
 		return nCliente;
 	}
