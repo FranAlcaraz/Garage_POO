@@ -16,15 +16,17 @@ public class Garage {
 	
     public Garage(){}//contructor por default
     
-	public Garage(String nombreGarage, double precioCambio, int vMax, int cRuedas) {
+	public Garage(String nombreGarage) {
 		this.nombreGarage = nombreGarage;
+	}
+	
+	public void openGarage(double precioCambio, int vMax, int cRuedas){
 		this.precioCambio = precioCambio;
 		this.vMax = vMax;
 		this.cRuedas = cRuedas;
 		clientes = new Cliente[10];
 		numeroDeClientes = 0;
 	}
-	
 	
 	public void nuevoCliente (String nombre, String tipoVehiculo){
 		int i = numeroDeClientes++;

@@ -24,8 +24,8 @@ public class Cliente {
 	}
 	
 	public void Auto (String tipoV, String m, int cPuertas, int kilometraje, int cRuedas){
-		int i = numeroDeAuto++;
-		auto[i] = new Auto (tipoV, m, cPuertas, kilometraje, cRuedas);
+		int k= numeroDeAuto++;
+		auto[k] = new Auto (tipoV, m, cPuertas, kilometraje, cRuedas);
 	}
 	
 	public String getnCliente() {
