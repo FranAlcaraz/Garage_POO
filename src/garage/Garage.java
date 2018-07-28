@@ -14,26 +14,14 @@ public class Garage {
 	private int vehiculos;
 	
 	
-	public void setNombreGarage(String nombreGarage) {
+	
+	
+	
+	public Garage(String nombreGarage, double precioCambio, int vMax) {
 		this.nombreGarage = nombreGarage;
-	}
-	public String getNombreGarage() {
-		return nombreGarage;
-	}	
-	public void setFijarPrecio(double precioCambio) {
 		this.precioCambio = precioCambio;
+		this.vMax = vMax;
 	}
-	public double getFijarPrecio() {
-		return precioCambio;
-	}
-	public void setMaximoVehiculos (int vMax){
-		this.vMax=vMax;
-	}
-	public int getMaximoVehiculos (){
-		return vMax;
-	}
-	
-	
 	public void setIngresoAuto(int ingAuto, Auto auto) {
 		this.ingAuto = ingAuto;
 		this.auto=auto;
