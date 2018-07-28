@@ -5,7 +5,8 @@ public class Cliente {
 	private String nCliente;
 	private String tipoV;
 	private Auto auto;
-	private Moto moto;
+	private Moto[] moto;
+	private int numeroDeMoto;
 	
 	public Cliente (String nombre, String tipoVehiculo){
 		nCliente =nombre;
@@ -13,7 +14,8 @@ public class Cliente {
 	}
 	
 	public void Moto (String tipoV, String m, int cilindrada, int kilometraje, int cRuedas){
-		moto = new Moto (tipoV, m, cilindrada, kilometraje, cRuedas);
+		int i = numeroDeMoto++;
+		moto[i] = new Moto (tipoV, m, cilindrada, kilometraje, cRuedas);
 	}
 	
 	
