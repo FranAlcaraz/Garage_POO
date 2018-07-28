@@ -7,8 +7,6 @@ public class Garage {
 	private double precioCambio;
 	private int vMax;
 	private int cRuedas;
-	private Auto auto;
-	private Moto moto;
 	private int ingAuto;
 	private int ingMoto;
 	private int vehiculos;
@@ -32,9 +30,6 @@ public class Garage {
 	public void nuevoCliente (String nombre, String tipoVehiculo){
 		int i = numeroDeClientes++;
 		clientes[i] = new Cliente (nombre, tipoVehiculo);
-	}
-		
-	public void cambioRuedas(String tipoVehiculo){
 		if (tipoVehiculo == "auto"){
 			ingAuto++;
 			cRuedas = cRuedas-4;
@@ -45,18 +40,7 @@ public class Garage {
 			System.out.println("Lo sentimos, no aceptamos este tipo de vehiculos");
 		}
 	}
-	
-	
-	
-	public void sumarVehiculo(){
-		vehiculos = ingAuto + ingMoto;
-	}
-	public void alertaMax(){
-		if (vehiculos>=10){
-		System.out.println("No caben más vehiculos...lo sentimos!");
-		}
-		
-	}
+
 	
 	
 	
