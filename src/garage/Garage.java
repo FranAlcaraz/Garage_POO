@@ -34,6 +34,19 @@ public class Garage {
 		clientes[i] = new Cliente (nombre, tipoVehiculo);
 	}
 		
+	public void cambioRuedas(String tipoVehiculo){
+		if (tipoVehiculo == "auto"){
+			ingAuto++;
+			cRuedas = cRuedas-4;
+		}else if(tipoVehiculo == "moto"){
+			ingMoto++;
+			cRuedas = cRuedas - 2;
+		}else{
+			System.out.println("Lo sentimos, no aceptamos este tipo de vehiculos");
+		}
+	}
+	
+	
 	
 	public void sumarVehiculo(){
 		vehiculos = ingAuto + ingMoto;
