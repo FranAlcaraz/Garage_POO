@@ -8,8 +8,7 @@ public class Moto {
 	private int km;
 	private int cantRuedas;
 	
-	public Moto (String tipoV, String m, int cilindrada, int kilometraje, int cRuedas){
-		tipoVehiculo = tipoV;
+	public Moto (String m, int cilindrada, int kilometraje, int cRuedas){
 		marca = m;
 		cc = cilindrada;
 		km = kilometraje;

@@ -24,22 +24,20 @@ public class Garage {
 		this.precioCambio = precioCambio;
 		this.vMax = vMax;
 		this.cRuedas = cRuedas;
-		clientes = new Cliente[10];
+		clientes = new Cliente[20];
 		numeroDeClientes = 0;
 	}
 	
-	public void nuevoCliente (String nombre, String tipoVehiculo){
+	public void nuevoCliente (String nombre){
 		int i = numeroDeClientes++;
-		clientes[i] = new Cliente (nombre, tipoVehiculo);
-		if (tipoVehiculo == "auto"){
-			ingAuto++;
-			cRuedas = cRuedas-4;
-		}else if(tipoVehiculo == "moto"){
-			ingMoto++;
-			cRuedas = cRuedas - 2;
-		}else{
-			System.out.println("Lo sentimos, no aceptamos este tipo de vehiculos");
+		clientes[i] = new Cliente (nombre);
 		}
-	}
 
+	public int getNumDeCliente() {
+		return numeroDeClientes;
+	}
+	
+	public Cliente getCliente(int customer_index){
+		return clientes[customer_index];
+	}
 }

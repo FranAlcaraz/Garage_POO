@@ -8,8 +8,7 @@ public class Auto {
 	private int km;
 	private int cantRuedas;
 	
-	public Auto (String tipoV, String m, int cPuertas,int kilometraje, int cRuedas){
-		tipoVehiculo = tipoV;
+	public Auto (String m, int cPuertas,int kilometraje, int cRuedas){
 		marca = m;
 		cantPuertas = cPuertas;
 		km = kilometraje;
