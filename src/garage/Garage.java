@@ -1,5 +1,6 @@
 package garage;
 
+
 public class Garage {
 
 	private String nombreGarage;
@@ -8,10 +9,11 @@ public class Garage {
 	private int cRuedas;
 	private Auto auto;
 	private Moto moto;
-	private Cliente cliente;
 	private int ingAuto;
 	private int ingMoto;
 	private int vehiculos;
+	private Cliente[] clientes;
+	private int numeroDeClientes;
 	
 	
 	
@@ -22,8 +24,10 @@ public class Garage {
 		this.cRuedas = cRuedas;
 	}
 	
-	
-	
+	public Garage(){
+		clientes = new Cliente[10];
+		numeroDeClientes = 0;
+	}
 	
 	
 	public void sumarVehiculo(){
