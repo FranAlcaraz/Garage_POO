@@ -29,6 +29,11 @@ public class Garage {
 		numeroDeClientes = 0;
 	}
 	
+	public void nuevoCliente (String nombre, String tipoVehiculo){
+		int i = numeroDeClientes++;
+		clientes[i] = new Cliente (nombre, tipoVehiculo);
+	}
+		
 	
 	public void sumarVehiculo(){
 		vehiculos = ingAuto + ingMoto;
