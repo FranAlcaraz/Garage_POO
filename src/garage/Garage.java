@@ -15,20 +15,15 @@ public class Garage {
 	
 	
 	
-	public Garage(String nombreGarage, double precioCambio, int vMax) {
+	public Garage(String nombreGarage, double precioCambio, int vMax, int cRuedas) {
 		this.nombreGarage = nombreGarage;
 		this.precioCambio = precioCambio;
 		this.vMax = vMax;
+		this.cRuedas = cRuedas;
 	}
 	
 	
-	public void setCambiarRuedas(int cRuedas){
-		this.cRuedas=cRuedas;
-	}
 	
-	public int getCambiarRuedas(){
-		return cRuedas;
-	}
 	
 	
 	public void sumarVehiculo(){
