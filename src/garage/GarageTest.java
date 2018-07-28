@@ -1,4 +1,5 @@
 package garage;
+import garage.Garage;;
 
 public class GarageTest {
 

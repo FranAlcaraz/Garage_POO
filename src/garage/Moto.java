@@ -16,8 +16,6 @@ public class Moto {
 		cantRuedas = cRuedas;
 	}
 	
-
-	
 	public String getTipovehiculo() {
 		return tipoVehiculo;
 	}
