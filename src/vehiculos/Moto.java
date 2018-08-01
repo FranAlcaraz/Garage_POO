@@ -10,8 +10,8 @@ public class Moto {
 	
 	public Moto(){}
 	
-	public Moto (String tipoV, String m, int cilindrada, int kilometraje, int cRuedas){
-		this.tipoV = tipoV;
+	public Moto (String tipoVe, String m, int cilindrada, int kilometraje, int cRuedas){
+		this.tipoV = tipoVe;
 		marca = m;
 		cc = cilindrada;
 		km = kilometraje;
@@ -43,7 +43,7 @@ public class Moto {
 
 
 	public String toString() {
-		return "Tipo Vehiculo " +tipoV + ", (Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
+		return "Tipo Vehiculo " + tipoV + ", (Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
 	}
 	
 	

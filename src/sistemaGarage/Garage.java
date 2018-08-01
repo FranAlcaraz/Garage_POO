@@ -46,7 +46,7 @@ public class Garage {
     
 		
 	//Metodos
-	public void nuevoClienteAuto (String n, String a,String tipoV, String m, int cPuertas,int kilometraje, int cRuedas){
+	public void nuevoClienteAuto (String n, String a,String tipoVe, String m, int cPuertas,int kilometraje, int cRuedas){
 		int i= numeroDeClientes++;
 		clientes[i] = new Cliente (n,a);
 		int k= numeroDeAutos++;
@@ -56,25 +56,25 @@ public class Garage {
 		stock = stock - cRuedas;
 		cambioCubiertas = precioCambio * cRuedas;
 		caja = caja + cambioCubiertas;
-		this.tipoV = tipoV;
+		tipoV = tipoVe;
 		}
 	
-	public void nuevoClienteMoto (String n, String a, String tipoV, String m, int cilindrada, int kilometraje, int cRuedas){
+	public void nuevoClienteMoto (String n, String a, String tipoVe, String m, int cilindrada, int kilometraje, int cRuedas){
 		int i= numeroDeClientes++;
 		clientes[i] = new Cliente (n,a);
 		int k= numeroDeMotos++;
-		motos[k] = new Moto (tipoV, m,cilindrada,kilometraje,cRuedas);
+		motos[k] = new Moto (tipoVe, m,cilindrada,kilometraje,cRuedas);
 		kMoto= kMoto+kilometraje;
 		ingMoto ++;
 		stock = stock - cRuedas;
 		cambioCubiertas = precioCambio * cRuedas;
 		caja = caja + cambioCubiertas;
-		this.tipoV = tipoV;
+		tipoV = tipoVe;
 		}
 	
 	public void alertaVehiculos(){
 		vehiculos = ingAuto + ingMoto;
-		if (vehiculos < vMax){
+		if (vehiculos <= vMax){
 		}else{
 			System.out.println("Lo sentimos, pero estamos completos");
 		}
