@@ -50,7 +50,7 @@ public class Garage {
 		int i= numeroDeAutos++;
 		autos[i] = new Auto (n,a,tipoVe,m,cPuertas,kilometraje,cRuedas);
 		kAuto= kAuto+kilometraje;
-		//ingAuto ++;
+		ingAuto++;
 		stock = stock - cRuedas;
 		cambioCubiertas = precioCambio * cRuedas;
 		caja = caja + cambioCubiertas;
@@ -62,7 +62,7 @@ public class Garage {
 		int i= numeroDeMotos++;
 		motos[i] = new Moto (n,a,tipoVe, m,cilindrada,kilometraje,cRuedas);
 		kMoto= kMoto+kilometraje;
-		//ingMoto ++;
+		ingMoto++;
 		stock = stock - cRuedas;
 		cambioCubiertas = precioCambio * cRuedas;
 		caja = caja + cambioCubiertas;
@@ -76,29 +76,35 @@ public class Garage {
 		}
 	}
 	
-	public void promedioKmAuto(){
+	public double promedioKmAuto(){
 		kMedioA = kAuto / ingAuto;
+		return kMedioA;
 	}
 	
-	public void promedioKmMoto(){
+	public double promedioKmMoto(){
 		kMedioM = kMoto / ingMoto;
+		return kMedioM;
 	}
 	
 	public void retiroAuto(int i){
+			ingAuto--;
 			autos[i]=null;
-		
 	}
 	public void retiroMoto(int i){
-			motos[i]=null;
+		ingMoto--;
+		motos[i]=null;
 	}
 	
 	public int nRandom(){
 		Random rnd = new Random();
 		int aleatorio1= rnd.nextInt(5);
-		System.out.println(aleatorio1);
+		System.out.println("Se retira el vehiculo número " +" ["+ aleatorio1+"]");
 		return aleatorio1;
 	}
 	
+	public void cierreGarage(){
+		System.out.println("Monto Total del Dia= "+caja+"\nStock al cierre= "+stock+"\nKilomentro Medio Moto= "+kMedioM+"\nKilomentro Medio Auto= "+ kMedioA);
+	}
 	
 	//Getters y Setters
 	public void setNombreGarage(String nombreGarage){

@@ -55,7 +55,7 @@ public class Auto {
 	}
 
 	public String toString() {
-		return "(Nombre cliente= "+nombre+" "+apellido+" Marca= " + marca + ", Puertas= " + cantPuertas + ", KM=" + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
+		return "(Nombre cliente= "+nombre+" "+apellido+" ;Marca= " + marca + " ;Puertas= " + cantPuertas + " ;KM=" + km + " ;Ruedas a Cambiar=" + cantRuedas + ")";
 	}
 	
 	

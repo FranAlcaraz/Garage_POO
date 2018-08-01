@@ -55,7 +55,7 @@ public class Moto {
 	}
 
 	public String toString() {
-		return "(Nombre cliente= "+nombre+" "+apellido+" Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
+		return "(Nombre cliente= "+nombre+" "+apellido+" ;Marca= " + marca + " ;Cilindrada= " + cc + " ;KM= " + km + " ;Ruedas a Cambiar=" + cantRuedas + ")";
 	}
 	
 	
