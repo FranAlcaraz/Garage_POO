@@ -28,32 +28,5 @@ public class Cliente {
 		return "Nombre Cliente= " + nombreC +" "+ apellidoC + "]";
 	}
 	
-	
-	
-	
-	
-	
-	/*public Cliente (String nCliente){
-		this.nCliente = nCliente;
-		this.numeroDeMoto = 0;
-	}
-	
-	public void Moto (String m, int cilindrada, int kilometraje, int cRuedas){
-		int i= numeroDeMoto++;
-		motos[i] = new Moto (m, cilindrada, kilometraje, cRuedas);
-	}
-	
-	public void Auto (String m, int cPuertas, int kilometraje, int cRuedas){
-		int k= numeroDeAuto++;
-		autos[k] = new Auto (m, cPuertas, kilometraje, cRuedas);
-	}
-	
-	public String getnCliente() {
-		return nCliente;
-	}
-	
-	public int getNumeroDeMoto() {
-		return numeroDeMoto;
-	}*/
 	}
 

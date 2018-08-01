@@ -7,41 +7,53 @@ public class Garage {
 
 	private String nombreGarage;
 	private double precioCambio;
+	private double cambioCubiertas;
+	private double kMedioA;
+	private double kMedioM;
+	private double caja;
 	private int vMax;
 	private int stock;
 	private int ingAuto;
 	private int ingMoto;
 	private int vehiculos;
-	private Cliente[] clientes;
-	private Moto [] motos;
-	private Auto [] autos;
 	private int numeroDeClientes = 0;
 	private int numeroDeAutos = 0;
 	private int numeroDeMotos = 0;
 	private int kMoto;
 	private int kAuto;
+	private Cliente[] clientes;
+	private Moto [] motos;
+	private Auto [] autos;
+
 	
+	//Constructores
+    
+	public Garage() {}//Constructor por defecto
 	
-    public Garage(){
+	public Garage(int vMax, int stock, double precioCambio){
     	clientes = new Cliente[20];
 		numeroDeClientes = 0;
 		autos = new Auto[10];
 		numeroDeClientes = 0;
 		motos = new Moto[10];
 		numeroDeClientes = 0;
+		this.vMax = vMax;
+		this.stock = stock;
+		this.precioCambio= precioCambio;
     }
     
-	public Garage(String nombreGarage) {//agregar vMax
-		this.nombreGarage = nombreGarage;
-	}
-	
+		
+	//Metodos
 	public void nuevoClienteAuto (String n, String a, String m, int cPuertas,int kilometraje, int cRuedas){
 		int i= numeroDeClientes++;
 		clientes[i] = new Cliente (n,a);
 		int k= numeroDeAutos++;
 		autos[k] = new Auto (m,cPuertas,kilometraje,cRuedas);
 		kAuto= kAuto+kilometraje;
-		
+		ingAuto ++;
+		stock = stock - cRuedas;
+		cambioCubiertas = precioCambio * cRuedas;
+		caja = caja + cambioCubiertas;
 		}
 	
 	public void nuevoClienteMoto (String n, String a, String m, int cilindrada, int kilometraje, int cRuedas){
@@ -50,7 +62,37 @@ public class Garage {
 		int k= numeroDeMotos++;
 		motos[k] = new Moto (m,cilindrada,kilometraje,cRuedas);
 		kMoto= kMoto+kilometraje;
+		ingMoto ++;
+		stock = stock - cRuedas;
+		cambioCubiertas = precioCambio * cRuedas;
+		caja = caja + cambioCubiertas;
 		}
+	
+	public void alertaVehiculos(){
+		vehiculos = ingAuto + ingMoto;
+		if (vehiculos < vMax){
+		}else{
+			System.out.println("Lo sentimos, pero estamos completos");
+		}
+	}
+	
+	public void promedioKmAuto(){
+		kMedioA = kAuto / ingAuto;
+	}
+	
+	public void promedioKmMoto(){
+		kMedioA = kMoto / ingMoto;
+	}
+	
+	//Getters y Setters
+	public void setNombreGarage(String nombreGarage){
+		this.nombreGarage=nombreGarage;
+	}
+		
+	public String getNombreGarage(){
+		System.out.println("Bienvenido a Daytona, por favor indiquenos Nombre, Apellido y su vehiculo. Gracias");
+		return nombreGarage;
+	}
 	
 	public int getNumDeCliente() {
 		return numeroDeClientes;
