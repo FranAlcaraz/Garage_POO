@@ -90,8 +90,15 @@ public class Garage {
 	}
 	public void retiroMoto(int i){
 			motos[i]=null;
+	}
 	
-}
+	public int nRandom(){
+		Random rnd = new Random();
+		int aleatorio1= rnd.nextInt(5);
+		System.out.println(aleatorio1);
+		return aleatorio1;
+	}
+	
 	
 	//Getters y Setters
 	public void setNombreGarage(String nombreGarage){

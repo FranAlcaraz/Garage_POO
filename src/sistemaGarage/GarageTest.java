@@ -2,6 +2,8 @@ package sistemaGarage;
 
 import java.util.Random;
 
+import org.omg.Messaging.SyncScopeHelper;
+
 import vehiculos.Auto;
 import vehiculos.Moto;
 
@@ -40,7 +42,7 @@ public class GarageTest {
 		garage.nuevoClienteMoto("Tobbb","e", "moto", "Yamaha", 122, 1234, 2);
 		
 		
-		//Bucles & SYSO
+		//Bucles & SYSO Ingreso de Vehiculos
 		for (int i = 0; i < garage.getvMax() ; i++){
 			if(garage.getMoto(i)!= null || garage.getAuto(i)!= null){
 				if(garage.getAuto(i) != null){
@@ -53,16 +55,11 @@ public class GarageTest {
 			}
 		garage.alertaVehiculos();
 		
+		//Salida de vehiculos
+		garage.retiroAuto(garage.nRandom());
+		garage.retiroMoto(garage.nRandom());
 		
-		Random rnd = new Random();
-		int aleatorio= rnd.nextInt(5);
-		int aleatorio2= rnd.nextInt(5);
-		System.out.println(aleatorio);
-		System.out.println(aleatorio2);
-		
-		garage.retiroAuto(aleatorio);
-		garage.retiroMoto(aleatorio2);
-		
+		//Bucles & SYSO Salida de Vehiculos
 		for (int i = 0; i < garage.getvMax() ; i++){
 			if(garage.getMoto(i)!= null || garage.getAuto(i)!= null){
 				if(garage.getAuto(i) != null){
@@ -72,7 +69,7 @@ public class GarageTest {
 					System.out.println("["+"Moto "+(i)+"]" + garage.getMoto(i));		
 				}else{}		
 			}else{}
-			}
+			}//for
 		
 		
 		}//main
