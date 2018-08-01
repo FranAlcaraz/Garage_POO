@@ -2,15 +2,17 @@ package vehiculos;
 
 public class Auto {
 
-		private String marca;
+	private String marca;
 	private int cantPuertas;
 	private int km;
 	private int cantRuedas;
+	private String tipoV;
 	
 	
 	public Auto(){}
 	
-	public Auto (String m, int cPuertas,int kilometraje, int cRuedas){
+	public Auto (String tipoV, String m, int cPuertas,int kilometraje, int cRuedas){
+		tipoV = tipoV;
 		marca = m;
 		cantPuertas = cPuertas;
 		km = kilometraje;

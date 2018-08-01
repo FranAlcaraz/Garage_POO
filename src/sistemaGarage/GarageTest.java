@@ -16,12 +16,13 @@ public class GarageTest {
 		garage.getNombreGarage();
 		
 		//Metodos
-		garage.nuevoClienteAuto("Franco", "Modarelli", "Audi", 4, 1234, 4);
-		garage.nuevoClienteAuto("Guido", "Modarelli", "Audi", 4, 24506, 4);
-		garage.nuevoClienteMoto("Nicolas", "Rios", "Yamaha", 123, 4321, 2);
+		garage.nuevoClienteAuto("Franco", "Modarelli", "auto","Audi", 4, 1234, 4);
+		garage.nuevoClienteAuto("Guido", "Modarelli","auto", "Audi", 4, 24506, 4);
+		garage.nuevoClienteMoto("Nicolas", "Rios","moto", "Yamaha", 123, 4321, 2);
 		
 		//Bucles & SYSO
 		for (int i = 0; i < garage.getNumDeCliente() ; i++){
+			
 			System.out.println(garage.getCliente(i) + "["+i+"]"+ " " + garage.getAuto(i));
 			}
 		}

@@ -25,6 +25,7 @@ public class Garage {
 	private Moto [] motos;
 	private Auto [] autos;
 
+
 	
 	//Constructores
     
@@ -44,11 +45,11 @@ public class Garage {
     
 		
 	//Metodos
-	public void nuevoClienteAuto (String n, String a, String m, int cPuertas,int kilometraje, int cRuedas){
+	public void nuevoClienteAuto (String n, String a,String tipoV, String m, int cPuertas,int kilometraje, int cRuedas){
 		int i= numeroDeClientes++;
 		clientes[i] = new Cliente (n,a);
 		int k= numeroDeAutos++;
-		autos[k] = new Auto (m,cPuertas,kilometraje,cRuedas);
+		autos[k] = new Auto (tipoV,m,cPuertas,kilometraje,cRuedas);
 		kAuto= kAuto+kilometraje;
 		ingAuto ++;
 		stock = stock - cRuedas;
@@ -56,11 +57,11 @@ public class Garage {
 		caja = caja + cambioCubiertas;
 		}
 	
-	public void nuevoClienteMoto (String n, String a, String m, int cilindrada, int kilometraje, int cRuedas){
+	public void nuevoClienteMoto (String n, String a, String tipoV, String m, int cilindrada, int kilometraje, int cRuedas){
 		int i= numeroDeClientes++;
 		clientes[i] = new Cliente (n,a);
 		int k= numeroDeMotos++;
-		motos[k] = new Moto (m,cilindrada,kilometraje,cRuedas);
+		motos[k] = new Moto (tipoV, m,cilindrada,kilometraje,cRuedas);
 		kMoto= kMoto+kilometraje;
 		ingMoto ++;
 		stock = stock - cRuedas;

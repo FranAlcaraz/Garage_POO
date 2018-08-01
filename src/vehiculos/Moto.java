@@ -6,10 +6,12 @@ public class Moto {
 	private int cc;
 	private int km;
 	private int cantRuedas;
+	private String tipoV;
 	
 	public Moto(){}
 	
-	public Moto (String m, int cilindrada, int kilometraje, int cRuedas){
+	public Moto (String tipoV, String m, int cilindrada, int kilometraje, int cRuedas){
+		tipoV = tipoV;
 		marca = m;
 		cc = cilindrada;
 		km = kilometraje;
