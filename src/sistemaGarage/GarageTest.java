@@ -1,8 +1,5 @@
 package sistemaGarage;
 
-import java.util.Random;
-
-import org.omg.Messaging.SyncScopeHelper;
 
 import vehiculos.Auto;
 import vehiculos.Moto;
