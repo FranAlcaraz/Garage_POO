@@ -81,8 +81,10 @@ public class Garage {
 	}
 	
 	public void promedioKmMoto(){
-		kMedioA = kMoto / ingMoto;
+		kMedioM = kMoto / ingMoto;
 	}
+	
+	
 	
 	//Getters y Setters
 	public void setNombreGarage(String nombreGarage){
@@ -124,4 +126,45 @@ public class Garage {
 	public int getkMoto (){
 		return kMoto;
 	}
+	
+	public double getPrecioCambio() {
+		return precioCambio;
+	}
+
+	public double getCambioCubiertas() {
+		return cambioCubiertas;
+	}
+
+	public double getkMedioA() {
+		return kMedioA;
+	}
+
+	public double getkMedioM() {
+		return kMedioM;
+	}
+
+	public double getCaja() {
+		return caja;
+	}
+
+	public int getvMax() {
+		return vMax;
+	}
+
+	public int getStock() {
+		return stock;
+	}
+
+	public int getIngAuto() {
+		return ingAuto;
+	}
+
+	public int getIngMoto() {
+		return ingMoto;
+	}
+
+	public int getVehiculos() {
+		return vehiculos;
+	}
+
 }
