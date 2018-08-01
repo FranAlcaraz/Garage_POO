@@ -1,12 +1,13 @@
-package garage;
+package vehiculos;
 
 public class Moto {
 
-	private String tipoVehiculo;
 	private String marca;
 	private int cc;
 	private int km;
 	private int cantRuedas;
+	
+	public Moto(){}
 	
 	public Moto (String m, int cilindrada, int kilometraje, int cRuedas){
 		marca = m;
@@ -17,9 +18,6 @@ public class Moto {
 	
 
 	
-	public String getTipovehiculo() {
-		return tipoVehiculo;
-	}
 	public String getMarca() {
 		return marca;
 	}
@@ -34,6 +32,11 @@ public class Moto {
 
 	public int getCantRuedas() {
 		return cantRuedas;
+	}
+
+
+	public String toString() {
+		return "Vehiculo: Moto (Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
 	}
 	
 	
