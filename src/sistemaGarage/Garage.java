@@ -24,6 +24,7 @@ public class Garage {
 	private Cliente[] clientes;
 	private Moto [] motos;
 	private Auto [] autos;
+	private String tipoV;
 
 
 	
@@ -55,6 +56,7 @@ public class Garage {
 		stock = stock - cRuedas;
 		cambioCubiertas = precioCambio * cRuedas;
 		caja = caja + cambioCubiertas;
+		this.tipoV = tipoV;
 		}
 	
 	public void nuevoClienteMoto (String n, String a, String tipoV, String m, int cilindrada, int kilometraje, int cRuedas){
@@ -67,6 +69,7 @@ public class Garage {
 		stock = stock - cRuedas;
 		cambioCubiertas = precioCambio * cRuedas;
 		caja = caja + cambioCubiertas;
+		this.tipoV = tipoV;
 		}
 	
 	public void alertaVehiculos(){
@@ -166,6 +169,10 @@ public class Garage {
 
 	public int getVehiculos() {
 		return vehiculos;
+	}
+	
+	public String getTipoV(){
+		return tipoV;
 	}
 
 }

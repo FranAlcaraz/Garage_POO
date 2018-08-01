@@ -24,6 +24,11 @@ public class Moto {
 		return marca;
 	}
 	
+	public String getTipoV() {
+		return tipoV;
+	}
+
+	
 	public int getCc() {
 		return cc;
 	}
@@ -38,7 +43,7 @@ public class Moto {
 
 
 	public String toString() {
-		return "Vehiculo: Moto (Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
+		return "Tipo Vehiculo" +tipoV + ", (Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
 	}
 	
 	

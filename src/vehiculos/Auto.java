@@ -26,6 +26,10 @@ public class Auto {
 		return marca;
 	}
 
+	public String getTipoV() {
+		return tipoV;
+	}
+
 	public int getCantPuertas() {
 		return cantPuertas;
 	}
@@ -40,7 +44,7 @@ public class Auto {
 
 
 	public String toString() {
-		return "Vehiculo: Auto [Marca= " + marca + ", Puertas= " + cantPuertas + ", KM=" + km + ", Ruedas a Cambiar=" + cantRuedas + "]";
+		return "Vehiculo: Auto [Tipo Vehiculo" +tipoV + ", Marca= " + marca + ", Puertas= " + cantPuertas + ", KM=" + km + ", Ruedas a Cambiar=" + cantRuedas + "]";
 	}
 	
 	

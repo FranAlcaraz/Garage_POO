@@ -22,8 +22,11 @@ public class GarageTest {
 		
 		//Bucles & SYSO
 		for (int i = 0; i < garage.getNumDeCliente() ; i++){
-			
-			System.out.println(garage.getCliente(i) + "["+i+"]"+ " " + garage.getAuto(i));
+			if(garage.getTipoV() == "auto") {
+				System.out.println(garage.getCliente(i) + "["+i+"]"+ " " + garage.getAuto(i));
+			}else {
+				System.out.println(garage.getCliente(i) + "["+i+"]"+ " " + garage.getMoto(i));
+			}
 			}
 		}
 		
