@@ -33,11 +33,9 @@ public class Garage {
 	public Garage() {}//Constructor por defecto
 	
 	public Garage(int vMax, int stock, double precioCambio){
-    	clientes = new Cliente[20];
+    	autos = new Auto[1000];
 		numeroDeClientes = 0;
-		autos = new Auto[10];
-		numeroDeClientes = 0;
-		motos = new Moto[10];
+		motos = new Moto[1000];
 		numeroDeClientes = 0;
 		this.vMax = vMax;
 		this.stock = stock;
@@ -47,12 +45,11 @@ public class Garage {
 		
 	//Metodos
 	public void nuevoClienteAuto (String n, String a,String tipoVe, String m, int cPuertas,int kilometraje, int cRuedas){
-		int i= numeroDeClientes++;
-		clientes[i] = new Cliente (n,a);
-		int k= numeroDeAutos++;
-		autos[k] = new Auto (tipoV,m,cPuertas,kilometraje,cRuedas);
+		numeroDeClientes ++;
+		int i= numeroDeAutos++;
+		autos[i] = new Auto (n,a,tipoVe,m,cPuertas,kilometraje,cRuedas);
 		kAuto= kAuto+kilometraje;
-		ingAuto ++;
+		//ingAuto ++;
 		stock = stock - cRuedas;
 		cambioCubiertas = precioCambio * cRuedas;
 		caja = caja + cambioCubiertas;
@@ -60,21 +57,40 @@ public class Garage {
 		}
 	
 	public void nuevoClienteMoto (String n, String a, String tipoVe, String m, int cilindrada, int kilometraje, int cRuedas){
-		int i= numeroDeClientes++;
-		clientes[i] = new Cliente (n,a);
-		int k= numeroDeMotos++;
-		motos[k] = new Moto (tipoVe, m,cilindrada,kilometraje,cRuedas);
+		numeroDeClientes ++;
+		int i= numeroDeMotos++;
+		motos[i] = new Moto (n,a,tipoVe, m,cilindrada,kilometraje,cRuedas);
 		kMoto= kMoto+kilometraje;
-		ingMoto ++;
+		//ingMoto ++;
 		stock = stock - cRuedas;
 		cambioCubiertas = precioCambio * cRuedas;
 		caja = caja + cambioCubiertas;
 		tipoV = tipoVe;
 		}
 	
+	
+//		public void newCliente(String n, String a, String tipoVe, String m, int cPuertas, int cilindrada, int kilometraje, int cRuedas){
+//			numeroDeClientes ++;
+//			cambioCubiertas = precioCambio * cRuedas;
+//			caja = caja + cambioCubiertas;
+//			stock = stock - cRuedas;
+//			tipoV = tipoVe;
+//			if (tipoV=="auto"){
+//				int i= numeroDeAutos++;
+//				autos[i] = new Auto (n,a,tipoVe,m,cPuertas,kilometraje,cRuedas);
+//				kAuto= kAuto+kilometraje;
+//				ingAuto ++;
+//			}else if (tipoV=="moto"){
+//				int i= numeroDeMotos++;
+//				motos[i] = new Moto (n,a,tipoVe, m,cilindrada,kilometraje,cRuedas);
+//				kMoto= kMoto+kilometraje;
+//				ingMoto ++;
+//			}else{
+//				System.out.println("Error");
+//			}
+//		}
 	public void alertaVehiculos(){
-		vehiculos = ingAuto + ingMoto;
-		if (vehiculos <= vMax){
+		if (numeroDeClientes <= vMax){
 		}else{
 			System.out.println("Lo sentimos, pero estamos completos");
 		}

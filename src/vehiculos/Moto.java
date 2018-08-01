@@ -7,15 +7,19 @@ public class Moto {
 	private int km;
 	private int cantRuedas;
 	private String tipoV;
+	private String nombre;
+	private String apellido;
 	
 	public Moto(){}
 	
-	public Moto (String tipoVe, String m, int cilindrada, int kilometraje, int cRuedas){
+	public Moto (String n, String a, String tipoVe, String m, int cilindrada, int kilometraje, int cRuedas){
 		this.tipoV = tipoVe;
 		marca = m;
 		cc = cilindrada;
 		km = kilometraje;
 		cantRuedas = cRuedas;
+		this.nombre=n;
+		this.apellido=a;
 	}
 	
 
@@ -42,8 +46,16 @@ public class Moto {
 	}
 
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
 	public String toString() {
-		return "Tipo Vehiculo " + tipoV + ", (Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
+		return "(Nombre cliente= "+nombre+" "+apellido+" Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
 	}
 	
 	

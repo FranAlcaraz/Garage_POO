@@ -7,16 +7,20 @@ public class Auto {
 	private int km;
 	private int cantRuedas;
 	private String tipoV;
+	private String nombre;
+	private String apellido;
 	
 	
 	public Auto(){}
 	
-	public Auto (String tipoV, String m, int cPuertas,int kilometraje, int cRuedas){
+	public Auto (String n, String a, String tipoV, String m, int cPuertas,int kilometraje, int cRuedas){
 		this.tipoV = tipoV;
 		marca = m;
 		cantPuertas = cPuertas;
 		km = kilometraje;
 		cantRuedas = cRuedas;
+		this.nombre=n;
+		this.apellido=a;
 	}
 	
 
@@ -42,9 +46,16 @@ public class Auto {
 		return cantRuedas;
 	}
 
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
 
 	public String toString() {
-		return "Vehiculo: "+tipoV+" [Marca= " + marca + ", Puertas= " + cantPuertas + ", KM=" + km + ", Ruedas a Cambiar=" + cantRuedas + "]";
+		return "(Nombre cliente= "+nombre+" "+apellido+" Marca= " + marca + ", Puertas= " + cantPuertas + ", KM=" + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
 	}
 	
 	
