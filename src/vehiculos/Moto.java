@@ -11,7 +11,7 @@ public class Moto {
 	public Moto(){}
 	
 	public Moto (String tipoV, String m, int cilindrada, int kilometraje, int cRuedas){
-		tipoV = tipoV;
+		this.tipoV = tipoV;
 		marca = m;
 		cc = cilindrada;
 		km = kilometraje;

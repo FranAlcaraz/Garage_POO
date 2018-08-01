@@ -12,7 +12,7 @@ public class Auto {
 	public Auto(){}
 	
 	public Auto (String tipoV, String m, int cPuertas,int kilometraje, int cRuedas){
-		tipoV = tipoV;
+		this.tipoV = tipoV;
 		marca = m;
 		cantPuertas = cPuertas;
 		km = kilometraje;
