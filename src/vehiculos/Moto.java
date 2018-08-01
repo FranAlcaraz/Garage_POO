@@ -43,7 +43,7 @@ public class Moto {
 
 
 	public String toString() {
-		return "Tipo Vehiculo" +tipoV + ", (Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
+		return "Tipo Vehiculo " +tipoV + ", (Marca= " + marca + ", Cilindrada= " + cc + ", KM= " + km + ", Ruedas a Cambiar=" + cantRuedas + ")";
 	}
 	
 	

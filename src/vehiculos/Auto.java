@@ -44,7 +44,7 @@ public class Auto {
 
 
 	public String toString() {
-		return "Vehiculo: Auto [Tipo Vehiculo" +tipoV + ", Marca= " + marca + ", Puertas= " + cantPuertas + ", KM=" + km + ", Ruedas a Cambiar=" + cantRuedas + "]";
+		return "Vehiculo: "+tipoV+" [Marca= " + marca + ", Puertas= " + cantPuertas + ", KM=" + km + ", Ruedas a Cambiar=" + cantRuedas + "]";
 	}
 	
 	
