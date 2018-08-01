@@ -1,5 +1,7 @@
 package sistemaGarage;
 
+import java.util.Random;
+
 import vehiculos.Auto;
 import vehiculos.Moto;
 
@@ -42,16 +44,39 @@ public class GarageTest {
 		for (int i = 0; i < garage.getvMax() ; i++){
 			if(garage.getMoto(i)!= null || garage.getAuto(i)!= null){
 				if(garage.getAuto(i) != null){
-					System.out.println("["+"Auto "+((i+1))+"]"+ garage.getAuto(i));
+					System.out.println("["+"Auto "+(i)+"]"+ garage.getAuto(i));
 					}else{}
 				if(garage.getMoto(i)!= null){
-					System.out.println("["+"Moto "+((i+1))+"]" + garage.getMoto(i));		
+					System.out.println("["+"Moto "+(i)+"]" + garage.getMoto(i));		
 				}else{}		
 			}else{}
 			}
 		garage.alertaVehiculos();
-		}
-		}
+		
+		
+		Random rnd = new Random();
+		int aleatorio= rnd.nextInt(5);
+		int aleatorio2= rnd.nextInt(5);
+		System.out.println(aleatorio);
+		System.out.println(aleatorio2);
+		
+		garage.retiroAuto(aleatorio);
+		garage.retiroMoto(aleatorio2);
+		
+		for (int i = 0; i < garage.getvMax() ; i++){
+			if(garage.getMoto(i)!= null || garage.getAuto(i)!= null){
+				if(garage.getAuto(i) != null){
+					System.out.println("["+"Auto "+(i)+"]"+ garage.getAuto(i));
+					}else{}
+				if(garage.getMoto(i)!= null){
+					System.out.println("["+"Moto "+(i)+"]" + garage.getMoto(i));		
+				}else{}		
+			}else{}
+			}
+		
+		
+		}//main
+		}//clase
 
 
 	

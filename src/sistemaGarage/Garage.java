@@ -1,5 +1,7 @@
 package sistemaGarage;
 
+import java.util.Random;
+
 import vehiculos.Auto;
 import vehiculos.Moto;
 
@@ -21,7 +23,6 @@ public class Garage {
 	private int numeroDeMotos = 0;
 	private int kMoto;
 	private int kAuto;
-	private Cliente[] clientes;
 	private Moto [] motos;
 	private Auto [] autos;
 	private String tipoV;
@@ -68,27 +69,6 @@ public class Garage {
 		tipoV = tipoVe;
 		}
 	
-	
-//		public void newCliente(String n, String a, String tipoVe, String m, int cPuertas, int cilindrada, int kilometraje, int cRuedas){
-//			numeroDeClientes ++;
-//			cambioCubiertas = precioCambio * cRuedas;
-//			caja = caja + cambioCubiertas;
-//			stock = stock - cRuedas;
-//			tipoV = tipoVe;
-//			if (tipoV=="auto"){
-//				int i= numeroDeAutos++;
-//				autos[i] = new Auto (n,a,tipoVe,m,cPuertas,kilometraje,cRuedas);
-//				kAuto= kAuto+kilometraje;
-//				ingAuto ++;
-//			}else if (tipoV=="moto"){
-//				int i= numeroDeMotos++;
-//				motos[i] = new Moto (n,a,tipoVe, m,cilindrada,kilometraje,cRuedas);
-//				kMoto= kMoto+kilometraje;
-//				ingMoto ++;
-//			}else{
-//				System.out.println("Error");
-//			}
-//		}
 	public void alertaVehiculos(){
 		if (numeroDeClientes <= vMax){
 		}else{
@@ -104,7 +84,14 @@ public class Garage {
 		kMedioM = kMoto / ingMoto;
 	}
 	
+	public void retiroAuto(int i){
+			autos[i]=null;
+		
+	}
+	public void retiroMoto(int i){
+			motos[i]=null;
 	
+}
 	
 	//Getters y Setters
 	public void setNombreGarage(String nombreGarage){
@@ -120,9 +107,6 @@ public class Garage {
 		return numeroDeClientes;
 	}
 	
-	public Cliente getCliente(int cliente_index){
-		return clientes[cliente_index];
-	}
 	
 	public int getNumDeMoto() {
 		return numeroDeMotos;
