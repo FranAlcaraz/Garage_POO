@@ -6,7 +6,8 @@ import vehiculos.Auto;
 import vehiculos.Moto;
 
 public class Garage {
-
+	
+	private String tipoV;
 	private String nombreGarage;
 	private double precioCambio;
 	private double cambioCubiertas;
@@ -25,7 +26,7 @@ public class Garage {
 	private int kAuto;
 	private Moto [] motos;
 	private Auto [] autos;
-	private String tipoV;
+
 
 
 	
