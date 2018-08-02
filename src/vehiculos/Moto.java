@@ -12,7 +12,7 @@ public class Moto {
 	
 	public Moto(){}
 	
-	public Moto (String n, String a, String tipoVe, String m, int cilindrada, int kilometraje, int cRuedas){ //constructor Moto
+	public Moto (String n, String a, String tipoVe, String m, int cilindrada, int kilometraje, int cRuedas){ //constructor sobrecargado Moto
 		this.tipoV = tipoVe;
 		marca = m;
 		cc = cilindrada;

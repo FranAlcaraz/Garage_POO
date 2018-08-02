@@ -11,9 +11,9 @@ public class Auto {
 	private String apellido;
 	
 	
-	public Auto(){}
+	public Auto(){}//contructor por default
 	
-	public Auto (String n, String a, String tipoV, String m, int cPuertas,int kilometraje, int cRuedas){
+	public Auto (String n, String a, String tipoV, String m, int cPuertas,int kilometraje, int cRuedas){ //constructor sobrecargado
 		this.tipoV = tipoV;
 		marca = m;
 		cantPuertas = cPuertas;
