@@ -3,7 +3,7 @@ package vehiculos;
 public class Auto {
 
 	private String marca;
-	private int cantPuertas;
+	private int cantPuertas; //Abstraccion (Reconocemos un Elemento del objeto)
 	private int km;
 	private int cantRuedas;
 	private String tipoV;

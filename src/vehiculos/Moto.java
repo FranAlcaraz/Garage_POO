@@ -3,7 +3,7 @@ package vehiculos;
 public class Moto {
 
 	private String marca;
-	private int cc;
+	private int cc; //abstraccion (Se identifica un Elemento del objeto completo)
 	private int km;
 	private int cantRuedas;
 	private String tipoV;
@@ -12,7 +12,7 @@ public class Moto {
 	
 	public Moto(){}
 	
-	public Moto (String n, String a, String tipoVe, String m, int cilindrada, int kilometraje, int cRuedas){
+	public Moto (String n, String a, String tipoVe, String m, int cilindrada, int kilometraje, int cRuedas){ //constructor Moto
 		this.tipoV = tipoVe;
 		marca = m;
 		cc = cilindrada;
