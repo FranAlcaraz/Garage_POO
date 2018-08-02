@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>369</x>
+      <y>153</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Ingreso vehiculo</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>522</x>
+      <y>306</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>verifico CantVehiculos</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>693</x>
+      <y>360</y>
+      <w>135</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>disponibilidad
+aviso_sin_lugar
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>180</y>
+      <w>180</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+</panel_attributes>
+    <additional_attributes>180.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>648</x>
+      <y>315</y>
+      <w>63</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>225</x>
+      <y>126</y>
+      <w>54</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Cliente</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>144</y>
+      <w>117</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;110.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>342</x>
+      <y>306</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>verifico CantRuedas</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>504</x>
+      <y>423</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>cambio CantRuedas</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>333</y>
+      <w>117</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+&lt;&lt;Extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>369</x>
+      <y>450</y>
+      <w>72</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>Mecanico
+
+sistema
+de
+gestion
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>441</x>
+      <y>432</y>
+      <w>81</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;40.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>414</x>
+      <y>180</y>
+      <w>45</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+
+</panel_attributes>
+    <additional_attributes>30.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>171</x>
+      <y>306</y>
+      <w>135</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>verifico Km Totales</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>261</x>
+      <y>180</y>
+      <w>180</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+             &lt;&lt;uses&gt;&gt;
+</panel_attributes>
+    <additional_attributes>10.0;140.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>837</x>
+      <y>252</y>
+      <w>72</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Sistema
+de Alerta</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>783</x>
+      <y>279</y>
+      <w>81</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>234</x>
+      <y>333</y>
+      <w>153</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;160.0</additional_attributes>
+  </element>
+</diagram>
