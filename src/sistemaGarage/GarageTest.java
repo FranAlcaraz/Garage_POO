@@ -1,8 +1,6 @@
 package sistemaGarage;
 
 
-import vehiculos.Auto;
-import vehiculos.Moto;
 
 
 public class GarageTest {
